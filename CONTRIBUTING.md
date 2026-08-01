@@ -22,6 +22,19 @@ pip install pytest
 ​Create a branch for your feature or bugfix:
 git checkout -b feature/your-feature-name
 
+### 4. Run Tests
+​Before submitting a pull request, ensure all offline tests pass:
+pytest tests/
+### 5. Commit & Push
+​Commit your changes with clear messages:
+git commit -m "feat: add support for new vector index algorithm"
+git push origin feature/your-feature-name
+### 6. Submit a Pull Request
+​Open a PR against the main branch of the official repository. Describe your changes and link any related issues.
+
+
+## ​📜 Code of Conduct
+​Please be respectful and constructive in all discussions, code reviews, and issue tracking.
 
 
 
