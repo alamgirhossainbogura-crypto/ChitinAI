@@ -6,16 +6,6 @@ ChitinAI is an enterprise-grade meta-agent that monitors live LLM agents, catche
 
 ---
 
-## 🏛️ System Architecture
-
-- **Watcher:** Real-time trace scanner and fault detector (`chitin/watcher.py`)
-- **Vector Memory:** CockroachDB Distributed Vector Search & Bedrock Titan (`chitin/memory/crdb_vector.py`)
-- **Auto-Healer:** Database CLI engine for infrastructure auto-scaling (`chitin/memory/ccloud_cli.py`)
-- **Cost Optimizer:** AWS Bedrock dynamic model router (`chitin/llm/aws_bedrock.py`)
-- **Visual Cockpit:** React / Vite Prompt Diff & Replay UI (`dashboard/`)
-
----
-
 ## 📐 Architecture & Data Flow
 
 +-------------------+      +-------------------+      +-------------------------+
