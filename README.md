@@ -1,12 +1,18 @@
 # 🛡️ ChitinAI — Autonomous Self-Healing Supervisor Meta-Agent
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python Version](https://img.shields.io/badge/python-3.10%2B-brightgreen)](https://www.python.org/)
-[![CI/CD Gate](https://github.com/alamgirhossainbogura-crypto/ChitinAI/actions/workflows/chitin-gate.yml/badge.svg)](https://github.com/alamgirhossainbogura-crypto/ChitinAI/actions)
-
-> **"Agents fail quietly. ChitinAI catches, patches, and auto-heals them."**
+> **Agents fail quietly. ChitinAI catches, patches, and auto-heals them.**
 
 ChitinAI is an enterprise-grade meta-agent that monitors live LLM agents, catches prompt hallucinations, executes infrastructure auto-healing via CockroachDB, and optimizes model inference routing through AWS Bedrock.
+
+---
+
+## 🏛️ System Architecture
+
+- **Watcher:** Real-time trace scanner and fault detector (`chitin/watcher.py`)
+- **Vector Memory:** CockroachDB Distributed Vector Search & Bedrock Titan (`chitin/memory/crdb_vector.py`)
+- **Auto-Healer:** Database CLI engine for infrastructure auto-scaling (`chitin/memory/ccloud_cli.py`)
+- **Cost Optimizer:** AWS Bedrock dynamic model router (`chitin/llm/aws_bedrock.py`)
+- **Visual Cockpit:** React / Vite Prompt Diff & Replay UI (`dashboard/`)
 
 ---
 
