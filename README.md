@@ -49,3 +49,15 @@ pip install -r requirements.txt
 python chitin/main.py
 
 ### 3. Launch Visual Cockpit
+cd dashboard
+npm install
+npm run dev
+
+## 🧪 Running Tests
+pytest tests/
+
+## 🛡️ License
+​Distributed under the Apache-2.0 License. See LICENSE for more information.
+
+
+
