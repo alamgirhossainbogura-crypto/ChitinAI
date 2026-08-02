@@ -8,16 +8,20 @@ ChitinAI is an enterprise-grade meta-agent that monitors live LLM agents, catche
 
 ## 📐 Architecture & Data Flow
 
+```text
 +-------------------+      +-------------------+      +-------------------------+
 | Victim AI Agent   | ---> | ChitinAI Watcher  | ---> | CockroachDB Vector RAG  |
 | (Failing Prompt)  |      | Trace Ingestion   |      | (Past Incident Search)  |
 +-------------------+      +-------------------+      +-------------------------+
-|
-v
+                                                                   |
+                                                                   v
 +-------------------+      +-------------------+      +-------------------------+
 | Slack / Discord   | <--- | ccloud CLI        | <--- | AWS Bedrock Router      |
 | Postmortem Alert  |      | Auto-Healer       |      | (Sonnet 3.5 / Nova)     |
 +-------------------+      +-------------------+      +-------------------------+
+```
+
+
 
 ---
 ## 🏛️ System Components
